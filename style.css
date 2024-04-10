@@ -1,12 +1,24 @@
 body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+	background: linear-gradient(-45deg,#fc00ff, #00dbde, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 90vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .nav {
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -33,12 +45,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 80vh;
+  height: 75vh;
   padding-left: 65px;
 }
 
 .image {
-  border: 5px solid white; 
+  border: 5px solid black; 
 }
 
 .aboutme {
@@ -46,7 +58,40 @@ body {
   overflow: hidden;
   position: fixed;
   width: 40%;
-  top: 70%;
+  top: 69%;
   height: auto;
-  left: 5%;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 5.5%;
+  border: 5px solid black;
+}
+
+.aboutproject {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  width:39%;
+  top: 13.3%;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 50%;
+  border: 5px solid black;
+}
+
+.wasisliter {
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 31%;
 }
