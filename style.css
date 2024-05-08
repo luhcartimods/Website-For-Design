@@ -1,35 +1,12 @@
 body {
-<<<<<<< HEAD
-	background: linear-gradient(-45deg,#fc00ff, #00dbde, white);
+	background-color: gray;
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 90vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .nav {
   background-color: transparent;
-=======
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.nav {
-  background-color: white;
->>>>>>> 551c442cefeac672a7f8ce0cd10eaf9abeb038e8
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -56,54 +33,41 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-<<<<<<< HEAD
   height: 75vh;
-=======
-  height: 80vh;
->>>>>>> 551c442cefeac672a7f8ce0cd10eaf9abeb038e8
   padding-left: 65px;
 }
 
 .image {
-<<<<<<< HEAD
-  border: 5px solid black; 
-=======
-  border: 5px solid white; 
->>>>>>> 551c442cefeac672a7f8ce0cd10eaf9abeb038e8
+  border: none; 
 }
 
 .aboutme {
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   position: fixed;
   width: 40%;
-<<<<<<< HEAD
-  top: 69%;
-=======
-  top: 70%;
->>>>>>> 551c442cefeac672a7f8ce0cd10eaf9abeb038e8
+  top: 65%;
   height: auto;
   text-decoration: none;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-  left: 5.5%;
-  border: 5px solid black;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 6%;
+  border: none;
 }
 
 .aboutproject {
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   position: fixed;
   width:39%;
-  top: 13.3%;
+  top: 10.5%;
   height: auto;
   text-decoration: none;
-  text-align: center;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   left: 50%;
-  border: 5px solid black;
+  border: none;
 }
 
 .wasisliter {
@@ -114,11 +78,81 @@ body {
   top: 5%;
   height: auto;
   text-decoration: none;
-  font-size: 60px;
+  text-align: center;
+  font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   left: 31%;
-=======
-  left: 5%;
->>>>>>> 551c442cefeac672a7f8ce0cd10eaf9abeb038e8
+}
+
+.factstitle {
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 80%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 3%;
+}
+
+.literis {
+  color: black lab(lightness a b);
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17.9px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 31%;
+  top: 22%;
+}
+
+.facts {
+  color: black;
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 3%;
+  top: 25%;
+}
+
+.image1forfacts {
+  border: none; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  height: 115vh;
+  padding-left: 550px;
+}
+
+.titlecontrib {
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 80%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 3%;
 }
