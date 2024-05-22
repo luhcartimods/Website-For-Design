@@ -25,8 +25,8 @@ body {
 }
 
 .nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -82,7 +82,7 @@ body {
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
-  left: 31%;
+  left: 3%;
 }
 
 .factstitle {
@@ -108,11 +108,11 @@ body {
   top: 5%;
   height: auto;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   font-size: 17.9px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
-  left: 31%;
+  left: 3%;
   top: 22%;
 }
 
@@ -155,4 +155,26 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   left: 3%;
+}
+
+.contributestatement {
+  color: black;
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 5%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  left: 3%;
+  top: 25%;
+}
+
+.videoyaheard{
+  position: fixed;
+  right: 20%;
+  top: 20%;
 }
