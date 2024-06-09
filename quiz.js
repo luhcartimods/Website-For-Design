@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function resetState() {
         clearInterval(timer);
-        timeLeft = 20;
+        timeLeft = 10;
         timeLeftElement.innerText = timeLeft;
         while (answerButtonsElement.firstChild) {
             answerButtonsElement.removeChild(answerButtonsElement.firstChild);
