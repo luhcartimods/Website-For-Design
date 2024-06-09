@@ -7,19 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <title>Activities</title>
+    <title>Quiz</title>
 </head>
 <body>
     <div class="nav">
         <a href="index.html">Home</a>
-        <a href="help.html">Help</a>
     </div>
-    <div class="container">
-            <a id="startButton" href="quiz.html">Start Activity</a>
-        </div>
+    <div class="quiz-container">
+        <button id="startButton">Start Quiz</button>
+        <h1 id="question" class="hide">Question Placeholder</h1>
+        <div id="answerButtons" class="btn-container hide"></div>
+        <div id="timer" class="timer-container hide">Time Left: <span id="timeLeft">20</span>s</div>
     </div>
-    <div id="scoreContainer" class="hide">
+    <div id="scoreContainer" class="score-container">
         <p>Score: <span id="scoreValue">0</span></p>
     </div>
+    <script src="quiz.js"></script> 
 </body>
 </html>

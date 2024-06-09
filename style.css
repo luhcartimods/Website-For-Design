@@ -1,8 +1,27 @@
+/* Common styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
-	background-color: gray;
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 90vh;
+  background-color: beige;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nav, .quiz-container, .score-container, .timer-container, .btn-container, .feedback, .aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .nav {
@@ -10,8 +29,10 @@ body {
   overflow: hidden;
   position: fixed;
   width: 100%;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: 1000; 
 }
 
 .nav a {
@@ -22,23 +43,106 @@ body {
   text-decoration: none;
   font-size: 21px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15px;
+  border-color: black;
 }
 
-.nav a:hover {
-  background-color: black;
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.score-container, .timer-container, .feedback {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.timer-container {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-top: 20px; 
+}
+
+#scoreContainer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#question {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 20px;
+  margin: 8px;  /* Reduced margin for less spacing */
+  cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: green;
   color: white;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 75vh;
-  padding-left: 65px;
+.wrong {
+  background-color: red;
+  color: white;
+}
+#startButton {
+  padding: 18px 36px;
+  font-size: 24px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#startButton:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+
+.aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard {
+  animation-delay: 1s;
 }
 
 .image {
-  border: none; 
+  border: none;
+  border-radius: 15px;
 }
 
 .aboutme {
@@ -46,32 +150,38 @@ body {
   overflow: hidden;
   position: fixed;
   width: 40%;
-  top: 65%;
+  top: 63%;
   height: auto;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  left: 6%;
+  font-family: 'Nunito';
+  font-weight: 400;
+  left: 5.35%;
   border: none;
+  border-radius: 15px;
+  border-color: black;
 }
 
 .aboutproject {
   background-color: transparent;
   overflow: hidden;
   position: fixed;
-  width:39%;
-  top: 10.5%;
+  width: 39%;
+  top: 9.2%;
   height: auto;
   text-decoration: none;
   text-align: left;
-  font-size: 18px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17.8px;
+  font-family: 'Nunito';
+  font-weight: 400;
   left: 50%;
   border: none;
+  border-radius: 15px;
+  border-color: black;
 }
 
 .wasisliter {
-  color: white;
+  color: black;
   overflow: hidden;
   position: fixed;
   width: 39%;
@@ -82,11 +192,26 @@ body {
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
+  left: 1.5%;
+}
+
+.literis {
+  color: black;
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 22%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'Nunito';
+  font-weight: 500;
   left: 3%;
 }
 
 .factstitle {
-  color: white;
+  color: black;
   overflow: hidden;
   position: fixed;
   width: 80%;
@@ -100,50 +225,33 @@ body {
   left: 3%;
 }
 
-.literis {
-  color: black lab(lightness a b);
-  overflow: hidden;
-  position: fixed;
-  width: 39%;
-  top: 5%;
-  height: auto;
-  text-decoration: none;
-  text-align: left;
-  font-size: 17.9px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  left: 3%;
-  top: 22%;
-}
-
 .facts {
   color: black;
   overflow: hidden;
   position: fixed;
   width: 39%;
-  top: 5%;
+  top: 23%;
   height: auto;
   text-decoration: none;
   text-align: left;
-  font-size: 17px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
+  font-size: 15px;
+  font-family: 'Nunito';
+  font-weight: 400;
   left: 3%;
-  top: 25%;
 }
 
 .image1forfacts {
-  border: none; 
+  border: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: fixed;
-  height: 115vh;
+  height: 120%;
   padding-left: 550px;
 }
 
 .titlecontrib {
-  color: white;
+  color: black;
   overflow: hidden;
   position: fixed;
   width: 80%;
@@ -162,19 +270,39 @@ body {
   overflow: hidden;
   position: fixed;
   width: 39%;
-  top: 5%;
+  top: 38%;
   height: auto;
   text-decoration: none;
   text-align: left;
   font-size: 17px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Nunito';
+  font-weight: 500;
+  left: 3%;
+}
+
+.parahuh {
+  color: black;
+  overflow: hidden;
+  position: fixed;
+  width: 39%;
+  top: 25%;
+  height: auto;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'Nunito';
   font-weight: 900;
   left: 3%;
+}
+
+.videoyaheard {
+  position: fixed;
+  right: 10%;
   top: 25%;
 }
 
-.videoyaheard{
+.video2yaheard {
   position: fixed;
-  right: 20%;
-  top: 20%;
+  right: 10%;
+  top: 28%;
 }
