@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="quiz-container">
+        <button id="startButton">Start Quiz</button>
+        <h1 id="question" class="hide">Question Placeholder</h1>
+        <div id="answerButtons" class="btn-container hide"></div>
+        <div id="timer" class="timer-container hide">Time Left: <span id="timeLeft">20</span>s</div>
+    </div>
+    <div id="scoreContainer" class="score-container">
+        <p>Score: <span id="scoreValue">0</span></p>
+    </div>
+    <script src="quiz.js"></script> 
+</body>
+</html>

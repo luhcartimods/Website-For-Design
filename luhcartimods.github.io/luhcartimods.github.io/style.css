@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-.nav, .quiz-container, .score-container, .timer-container, .btn-container, .feedback, .aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard, .container {
+.nav, .quiz-container, .score-container, .timer-container, .btn-container, .feedback, .aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
 }
@@ -89,9 +89,9 @@ body {
 button {
   padding: 14px 28px;
   font-size: 20px;
-  margin: 8px; 
+  margin: 8px;  /* Reduced margin for less spacing */
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Green */
   color: white;
   border: none;
   border-radius: 8px;
@@ -99,7 +99,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; 
+  background-color: #45a049; /* Darker green */
 }
 
 .hide {
@@ -118,7 +118,7 @@ button:hover {
 #startButton {
   padding: 18px 36px;
   font-size: 24px;
-  background-color: #4CAF50; 
+  background-color: #4CAF50; /* Green */
   color: white;
   border: none;
   border-radius: 8px;
@@ -131,11 +131,11 @@ button:hover {
 }
 
 #startButton:hover {
-  background-color: #45a049; 
+  background-color: #45a049; /* Darker green */
 }
 
 
-.aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard, .container {
+.aboutme, .aboutproject, .wasisliter, .literis, .factstitle, .facts, .image1forfacts, .titlecontrib, .contributestatement, .parahuh, .videoyaheard, .video2yaheard {
   animation-delay: 1s;
 }
 
@@ -145,27 +145,8 @@ button:hover {
   justify-content: flex-start;
   align-items: center;
   position: fixed;
-  height: 75%;
-  padding-left: 65px;
-}
-
-.containerStart {
-  padding: 18px 36px;
-  font-size: 24px;
-  background-color: #4CAF50; 
-  color: white;
-  border: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.containerStart:hover {
-  background-color: #45a049;
+  height: 120%;
+  padding-left: 550px;
 }
 
 .image {
@@ -258,7 +239,7 @@ button:hover {
   overflow: hidden;
   position: fixed;
   width: 39%;
-  top: 28%;
+  top: 23%;
   height: auto;
   text-decoration: none;
   text-align: left;
